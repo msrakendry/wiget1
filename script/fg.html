@@ -1,0 +1,144 @@
+
+  ///////////////////////////////////////////////////////start frist slide--images--////////////////////////////////////////////////////////
+
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  // Next/previous controls
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  // Thumbnail image controls
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySli ");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
+  
+  ///////////////////////////////////////////////////////end frist slide--images--////////////////////////////////////////////////////////
+ 
+
+ ///////////////////////////////////////////////////////start frist slide--images--////////////////////////////////////////////////////////
+
+
+ let n = 0;
+
+ function fr_slide_j() {
+   const fr_imag_j = document.getElementsByClassName("slickACTIV");
+   const fr_slide_btu = document.getElementsByClassName("button-fr");
+ 
+   for (let i = 0; i < fr_imag_j.length; i++) {
+     fr_imag_j[i].style = "display:none";
+   }
+   for (let i = 0; i < fr_slide_btu.length; i++) {
+     fr_slide_btu[i].className = fr_slide_btu[i].className.replace(" active", "");
+   }
+ 
+   n++;
+   if (n > fr_imag_j.length) {
+     n = 1;
+   }
+ 
+   fr_imag_j[n - 1].style = "display: block; width:1350px;   ";
+   fr_slide_btu[n - 1].className += " active";
+ 
+   setTimeout(fr_slide_j, 3000);
+ }
+ 
+ fr_slide_j();
+ 
+ ///////////////////////////////////////////////////////end frist slide--images--////////////////////////////////////////////////////////
+ 
+
+
+
+
+
+ ///////////////////////////////////////////////////////start frist slide--images--////////////////////////////////////////////////////////
+
+ ///////////////////////////////////////////////////////start frist slide--images--////////////////////////////////////////////////////////
+
+ let slideIndex = 1;
+ showSlides(slideIndex);
+ 
+ // Next/previous controls
+ function plusSlides(n) {
+   showSlides(slideIndex += n);
+ }
+ 
+ // Thumbnail image controls
+ function currentSlide(n) {
+   showSlides(slideIndex = n);
+ }
+ 
+ function showSlides(n) {
+   let i;
+   let slides = document.getElementsByClassName("mySli ");
+   let dots = document.getElementsByClassName("dot");
+   if (n > slides.length) {slideIndex = 1}
+   if (n < 1) {slideIndex = slides.length}
+   for (i = 0; i < slides.length; i++) {
+     slides[i].style.display = "none";
+   }
+   for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" active", "");
+   }
+   slides[slideIndex-1].style.display = "block";
+   dots[slideIndex-1].className += " active";
+ }
+ 
+ ///////////////////////////////////////////////////////end frist slide--images--////////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////start frist slide--images--////////////////////////////////////////////////////////
+
+
+let n = 0;
+
+function fr_slide_j() {
+  const fr_imag_j = document.getElementsByClassName("slickACTIV");
+  const fr_slide_btu = document.getElementsByClassName("button-fr");
+
+  for (let i = 0; i < fr_imag_j.length; i++) {
+    fr_imag_j[i].style = "display:none";
+  }
+  for (let i = 0; i < fr_slide_btu.length; i++) {
+    fr_slide_btu[i].className = fr_slide_btu[i].className.replace(" active", "");
+  }
+
+  n++;
+  if (n > fr_imag_j.length) {
+    n = 1;
+  }
+
+  fr_imag_j[n - 1].style = "display: block; width:1350px;   ";
+  fr_slide_btu[n - 1].className += " active";
+
+  setTimeout(fr_slide_j, 3000);
+}
+
+fr_slide_j();
+
+///////////////////////////////////////////////////////end frist slide--images--////////////////////////////////////////////////////////
+
+
+
+
+
+
+///////////////////////////////////////////////////////start frist slide--images--////////////////////////////////////////////////////////
